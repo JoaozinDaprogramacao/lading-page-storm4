@@ -1,0 +1,141 @@
+/* Reset básico CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Definir fonte padrão para evitar inconsistências */
+body {
+    line-height: 1;
+    font-family: Arial, sans-serif;
+}
+
+/* Elementos de lista sem estilos padrão */
+ol, ul {
+    list-style: none;
+}
+
+/* Elementos de hyperlink sem decoração padrão */
+a {
+    text-decoration: none;
+}
+
+/* Elementos de botão sem estilos padrão */
+button, input, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none; /* Evitar contornos indesejados em foco */
+}
+
+/* Elementos de agrupamento sem estilos padrão */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Elementos de bloco que deve se comportar como blocos */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Corrigir tamanhos de fonte e espaçamento para elementos de legenda e legendas de tabelas */
+figcaption, legend {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Recriar apropriadamente a visibilidade oculta para legenda */
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Limpar regras de estilo embutidas para objetos de mídia */
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+/* Redefinir regras de estilo embutidas para elementos de HTML5 */
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/* Corrigir problemas de renderização do IE9 */
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Redefinir configurações de caixa de seleção padrão */
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* Corrigir caixas de margem de espaço em navegadores mais recentes */
+body {
+    line-height: normal;
+}
+
+/* Redefinir altura para input search em navegadores mais recentes */
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/* Ocultar setas de número em input number em navegadores mais recentes */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/* Redefinir ícones de progresso em input progress em navegadores mais recentes */
+input[type="number"]::-webkit-progress-inner-element,
+input[type="number"]::-webkit-progress-bar {
+    background: transparent;
+}
+
+/* Corrigir opções de estilo apresentadas no Safari e Chrome */
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+/* Corrigir estilo inválido de fonte em Safari */
+[hidden] {
+    display: none;
+}
+
+/* Definir regras de estilo para elementos agrupados */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
